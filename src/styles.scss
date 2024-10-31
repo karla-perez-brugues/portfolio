@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --accent-color: linear-gradient(90deg, rgb(7, 213, 0) 0%, rgb(0, 177, 216) 100%);;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Figtree', sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+p, li, a {
+  font-family: 'JetBrains Mono', monospace;
+}
