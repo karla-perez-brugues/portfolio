@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import {HeroComponent} from './hero/hero.component';
-import {ExperienceListComponent} from './experience-list/experience-list.component';
+import {HeroComponent} from './pages/hero/hero.component';
+import {ExperienceListComponent} from './pages/experience-list/experience-list.component';
 
 export const routes: Routes = [
   { path: '', component: HeroComponent},

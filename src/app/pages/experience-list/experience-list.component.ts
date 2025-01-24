@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ExperienceModel} from '../models/experience.model';
-import {ExperienceService} from '../services/experience.service';
+import {ExperienceModel} from '../../core/models/experience.model';
+import {ExperienceService} from '../../core/services/experience.service';
 import {DatePipe, NgClass} from '@angular/common';
 
 @Component({
