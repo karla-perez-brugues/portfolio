@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Développeuse Back-End",
+    "company": "Enedis",
+    "companyLogo": "logo-enedis.png",
+    "from": "septembre 2020",
+    "to": "août 2022",
+    "description": "Conception et développement d’un outil de suivi de chantier pour la mise en service d'un parc d’organes de manœuvre télécommandés.",
+    "tasks": [
+      "Modélisation de la base de données",
+      "Conception de l’architecture de l’outil",
+      "Conception d’interfaces utilisateur",
+      "Suivi et gestion de l’avancée du projet avec GitLab",
+      "Animation et coordination de points réguliers avec les porteurs de projet",
+      "Développement de fonctionnalités et correction de bugs"
+    ],
+    "skills": [
+      "Symfony",
+      "Twig",
+      "JavaScript",
+      "Git"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Développeuse Back-End",
+    "company": "Dayuse",
+    "companyLogo": "logo-dayuse.png",
+    "from": "septembre 2022",
+    "to": "août 2024",
+    "description": "Refonte du tunnel de réservation des chambres d’hôtel afin d’améliorer le taux de conversion et refonte du modèle de données interne pour le rapprocher du modèle hôtelier.",
+    "tasks": [
+      "Refonte de l’API de gestion des réservations",
+      "Modélisation d’une nouvelle base de données",
+      "Développement de fonctionnalités",
+      "Maintenance opérationnelle et correction de bugs",
+      "Déploiement de releases et de hotfix avec Git Flow",
+      "Rédaction de tests unitaires"
+    ],
+    "skills": [
+      "Symfony",
+      "Api Platform",
+      "PhpUnit",
+      "Git",
+      "React",
+      "Next.js"
+    ]
+  }
+]

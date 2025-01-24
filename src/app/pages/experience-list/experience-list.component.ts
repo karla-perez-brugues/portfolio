@@ -1,25 +1,26 @@
 import {Component, OnInit} from '@angular/core';
-import {ExperienceModel} from '../../core/models/experience.model';
+import {Experience} from '../../core/models/experience.model';
 import {ExperienceService} from '../../core/services/experience.service';
-import {DatePipe, NgClass} from '@angular/common';
+import {AsyncPipe} from '@angular/common';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-experience-list',
   standalone: true,
   imports: [
-    NgClass,
-    DatePipe,
+    AsyncPipe,
   ],
   templateUrl: './experience-list.component.html',
   styleUrl: './experience-list.component.scss'
 })
 export class ExperienceListComponent implements OnInit {
-  experiences!: ExperienceModel[];
+  experiences$!: Observable<Experience[]>;
 
   constructor(private experienceService: ExperienceService) {}
 
   ngOnInit() {
-    this.experiences = this.experienceService.getExperiences();
+    // TODO: sort by id desc
+    this.experiences$ = this.experienceService.getExperiences();
   }
 
   protected isIdEven(number: number): boolean {

@@ -1,12 +1,11 @@
-export class ExperienceModel {
-  constructor(
-    public id: number,
-    public title: string,
-    public company: string,
-    public companyLogo: string,
-    public description: string,
-    public from: string,
-    public to: string,
-  ) {
-  }
+export interface Experience {
+  id: number;
+  title: string;
+  company: string;
+  companyLogo: string;
+  from: string;
+  to: string;
+  description: string;
+  tasks: string[];
+  skills: string[];
 }

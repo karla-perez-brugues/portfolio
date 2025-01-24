@@ -1,6 +1,6 @@
 <div class="container my-20">
   <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-    @for (experience of experiences; track experience.id) {
+    @for (experience of (experiences$ | async) ; track experience.id) {
       <li>
         <hr />
         <div class="timeline-start">
@@ -23,6 +23,18 @@
           <h2 class="text-xl font-black">{{ experience.title }}</h2>
           <br>
           <p [innerHTML]="experience.description"></p>
+          <br>
+          <ul class="list-disc ml-4">
+            @for (task of experience.tasks; track task) {
+              <li>{{task}}</li>
+            }
+          </ul>
+          <br>
+          <div>
+            @for (skill of experience.skills; track skill) {
+              <div class="badge badge-primary m-1">{{skill}}</div>
+            }
+          </div>
         </div>
         <hr />
       </li>
