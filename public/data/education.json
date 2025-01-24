@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "title": "Services Informatiques aux Organisations",
+    "school": "Groupe GEFOR",
+    "level": "Bac+2",
+    "year": 2019,
+    "skills": [
+      "Python",
+      "HTML/CSS",
+      "JavaScript",
+      "PHP",
+      "SQL",
+      "SGBD"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Développeur / Intégrateur Web",
+    "school": "IFOCOP",
+    "level": "Bac+3",
+    "year": 2020,
+    "skills": [
+      "HTML/CSS",
+      "JavaScript",
+      "Bootstrap",
+      "PHP",
+      "SQL",
+      "SGBD",
+      "Ajax"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Développeur Full-Stack Java/Angular",
+    "school": "OpenClassrooms",
+    "level": "Bac+5",
+    "year": 2025,
+    "skills": [
+      "Java",
+      "Maven",
+      "Spring",
+      "JUnit",
+      "API REST",
+      "Angular",
+      "Docker"
+    ]
+  }
+]
