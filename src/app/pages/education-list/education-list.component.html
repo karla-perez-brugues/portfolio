@@ -1,10 +1,20 @@
-<div class="container my-20">
+<div class="my-20">
   <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
     @for (education of (education$ | async) ; track education.id) {
       <li>
         <hr />
         <div class="timeline-start">
-        <!-- TODO: put something here -->
+          <!-- FIXME: refactor this -->
+          @if (isIdEven(education.id)) {
+            <time class="font-mono italic">{{ education.year }}</time>
+            <h2 class="text-xl font-black">{{ education.level }} - {{ education.title }}</h2>
+            <br>
+            <div>
+              @for (skill of education.skills; track skill) {
+                <div class="badge badge-primary m-1">{{skill}}</div>
+              }
+            </div>
+          }
         </div>
         <div class="timeline-middle">
           <svg
@@ -19,14 +29,17 @@
           </svg>
         </div>
         <div class="mb-10 timeline-end">
-          <time class="font-mono italic">{{ education.year }}</time>
-          <h2 class="text-xl font-black">{{ education.level }} - {{ education.title }}</h2>
-          <br>
-          <div>
-            @for (skill of education.skills; track skill) {
-              <div class="badge badge-primary m-1">{{skill}}</div>
-            }
-          </div>
+          <!-- FIXME: refactor this -->
+          @if (!isIdEven(education.id)) {
+            <time class="font-mono italic">{{ education.year }}</time>
+            <h2 class="text-xl font-black">{{ education.level }} - {{ education.title }}</h2>
+            <br>
+            <div>
+              @for (skill of education.skills; track skill) {
+                <div class="badge badge-primary m-1">{{skill}}</div>
+              }
+            </div>
+          }
         </div>
         <hr />
       </li>

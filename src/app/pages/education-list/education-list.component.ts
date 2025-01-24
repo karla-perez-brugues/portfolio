@@ -19,6 +19,11 @@ export class EducationListComponent implements OnInit {
   constructor(private educationService: EducationService) {}
 
   ngOnInit() {
+    // TODO: sort by id desc
     this.education$ = this.educationService.getEducation();
+  }
+
+  protected isIdEven(number: number): boolean {
+    return number % 2 == 0;
   }
 }
